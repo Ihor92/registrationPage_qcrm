@@ -1,0 +1,47 @@
+@import "./registration.css";
+@import "./visibleDecoration.css";
+@import "./helveticaNeue.css";
+
+:root {
+  --subtitle-collor: #787b79;
+  --input-placeholder: #b2b2b2;
+  --background-card: #ecf2ef;
+  --registration-button: #3e9ffd;
+  --input-border_default: #636363;
+  --input-border_focus: #3b98f1;
+  --input-checkbox_checked: #5394fb;
+
+  --placeholder-fontSize: 32px;
+  --font-helvetica: "Helvetica", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.registrationPage {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/Flowers.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrationPage_wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 722px;
+  height: 840px;
+  background: #f3f8f4;
+  position: relative;
+  opacity: 0.8;
+}

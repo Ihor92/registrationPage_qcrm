@@ -1,0 +1,40 @@
+.visibleDecoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  left: 260px;
+  opacity: 0.8;
+}
+
+.visibleDecoration__wrap {
+  display: block;
+}
+
+.visibleDecoration__block {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+}
+
+.visibleDecoration_orange {
+  background: orange;
+}
+
+.visibleDecoration_blue {
+  background: blue;
+}
+
+.visibleDecoration_purple {
+  background: purple;
+}
+
+.visibleDecoration_green {
+  background: green;
+}
