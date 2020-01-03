@@ -1,6 +1,7 @@
 @import "./registration.css";
 @import "./visibleDecoration.css";
 @import "./helveticaNeue.css";
+@import "./inputFields.css";
 
 :root {
   --subtitle-collor: #787b79;
@@ -28,11 +29,47 @@ html {
 .registrationPage {
   height: 100vh;
   width: 100%;
-  background: url(../img/Flowers.png);
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.registrationPage__background {
+  background: url(../img/Flowers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100%;
+
+  position: absolute;
+  opacity: 0;
+
+  animation-name: backgroundImg;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backgroundImg {
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.10;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .registrationPage_wrap {
@@ -44,4 +81,16 @@ html {
   background: #f3f8f4;
   position: relative;
   opacity: 0.8;
+
+  animation-name: transformRegistrationPage;
+  animation-duration: 3s;
+}
+
+@keyframes transformRegistrationPage {
+  from {
+    transform: translateZ(100px) rotateX(-90deg);
+  }
+  to {
+    transform: translateZ(0px) rotateX(0deg);
+  }
 }

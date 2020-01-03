@@ -1,0 +1,140 @@
+.inputFields {
+  width: 560px;
+  height: 80px;
+  border: 2px solid var(--input-border_default);
+}
+
+.inputFields:focus {
+  border: 2px solid var(--input-border_focus);
+}
+
+.inputFields_login {
+  margin-top: 74px;
+}
+
+.inputFields_password {
+  margin-top: 40px;
+}
+
+.inputFields::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  font-size: var(--placeholder-fontSize);
+  padding-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  font-size: var(--placeholder-fontSize);
+  padding-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  font-size: var(--placeholder-fontSize);
+  padding-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  font-size: var(--placeholder-fontSize);
+  padding-left: 18px;
+  font-family: var(--font-helvetica);
+}
+
+.inputFields:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  padding-left: 18px;
+  font-size: var(--placeholder-fontSize);
+  margin-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  padding-left: 18px;
+  font-size: var(--placeholder-fontSize);
+  margin-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  padding-left: 18px;
+  font-size: var(--placeholder-fontSize);
+  margin-left: 18px;
+  font-family: var(--font-helvetica);
+}
+.inputFields:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  padding-left: 18px;
+  font-size: var(--placeholder-fontSize);
+  margin-left: 18px;
+  font-family: var(--font-helvetica);
+}
+
+.inputFields__checkbox {
+  position: relative;
+  padding-top: 50px;
+}
+
+.inputFields__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.inputFields__input:checked + .inputFields__label:before {
+  background: var(--input-checkbox_checked);
+  border-color: var(--input-checkbox_checked);
+}
+
+.inputFields__label {
+  font-size: 26px;
+  color: var(--input-border_default);
+
+  padding-left: 25px;
+}
+
+.inputFields__label:before {
+  content: "";
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid var(--input-border_default);
+  border-radius: 5px;
+
+  position: absolute;
+  top: 53px;
+  left: 0;
+  z-index: 1;
+
+  transition: background .1s linear, border .1s linear;
+}
+
+.inputFields__label:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/checked.svg");
+  background-size: 25px 25px;
+
+  position: absolute;
+  top: 51px;
+  left: -2px;
+  z-index: 2;
+  transition: opacity .1s linear;
+}
+
+.inputFields__input:checked + .inputFields__label:after {
+  opacity: 1;
+}

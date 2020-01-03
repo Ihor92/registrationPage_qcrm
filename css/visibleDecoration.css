@@ -10,31 +10,44 @@
   position: absolute;
   top: -100px;
   left: 260px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .visibleDecoration__wrap {
-  display: block;
+  position: relative;
+}
+
+.visibleDecoration__wrap_right {
+  position: absolute;
+  top: 58px;
+  left: 90px;
+}
+
+.visibleDecoration__wrap_left {
+  position: absolute;
+  top: 30px;
+  left: 52px;
 }
 
 .visibleDecoration__block {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   border-radius: 20%;
+  opacity: 0.8;
 }
 
 .visibleDecoration_orange {
-  background: orange;
+  background: #f8911d;
 }
 
 .visibleDecoration_blue {
-  background: blue;
+  background: #3e9ffd;
 }
 
 .visibleDecoration_purple {
-  background: purple;
+  background: #d1369c;
 }
 
 .visibleDecoration_green {
-  background: green;
+  background: #4ebf49;
 }

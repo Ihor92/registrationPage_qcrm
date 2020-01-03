@@ -8,14 +8,19 @@
   <title>Registration Page </title>
 
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
+  <div class="registrationPage__background">
+
+  </div>
+  
   <div class="registrationPage">
     <div class="registrationPage_wrap">
 
-      <div class="visibleDecoration">
-        <div class="visibleDecoration__wrap">
+      <div class="visibleDecoration visibleDecoration_wrap">
+        <div class="visibleDecoration__wrap_left">
           <div class="visibleDecoration_orange visibleDecoration__block">
 
           </div>
@@ -24,7 +29,7 @@
           </div>
         </div>
 
-        <div class="visibleDecoration__wrap">
+        <div class="visibleDecoration__wrap_right">
           <div class="visibleDecoration_purple visibleDecoration__block">
 
           </div>
@@ -41,21 +46,26 @@
             <h3 class="registration__subtitle">by SupportYourApp</h3>
           </div>
 
-          <input type="text" class="registration__input registration__input_login" autofocus required placeholder="Login">
-          <input type="password" class="registration__input registration__input_password" required placeholder="Password">
-          <label>
-            <input type="checkbox" class="registration__checkbox" readonly checked>
-            Remember me on this computer
-          </label>
+          <input type="text" class="inputFields inputFields_login" autofocus required placeholder="Login">
+          <input type="password" class="inputFields inputFields_password" required placeholder="Password">
 
-          <button type="submit">
-            Sign In to <span>Qcrm</span>
+          <div class="inputFields__checkbox">
+            <input type="checkbox" id="checkbox" class="inputFields__input" readonly checked>
+
+            <label class="inputFields__label" for="checkbox">
+              Remember me on this computer
+            </label>
+          </div>
+
+          <button type="submit" class="registration__button">
+            Sign In to <span class="registration__button_uppercase">Qcrm</span>
           </button>
 
         </form>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>

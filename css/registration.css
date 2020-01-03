@@ -26,87 +26,18 @@
   font-family: var(--font-helvetica);
 }
 
-.registration__input {
-  width: 560px;
+.registration__button {
+  width: 100%;
   height: 80px;
-  border: 1px solid var(--input-border_default)
-}
 
-.registration__input_login {
-  margin-top: 74px;
-}
-
-.registration__input_password {
-  margin-top: 40px;
-}
-
-.registration__input:focus {
-  border: 2px solid var(--input-border_focus);
-}
-
-.registration__input::-webkit-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.7s ease;
-  font-size: var(--placeholder-fontSize);
-  padding-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input::-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.7s ease;
-  font-size: var(--placeholder-fontSize);
-  padding-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input:-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.7s ease;
-  font-size: var(--placeholder-fontSize);
-  padding-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input:-ms-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.7s ease;
-  font-size: var(--placeholder-fontSize);
-  padding-left: 18px;
-  font-family: var(--font-helvetica);
-}
-
-.registration__input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.7s ease;
-  padding-left: 18px;
-  font-size: var(--placeholder-fontSize);
-  margin-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.7s ease;
-  padding-left: 18px;
-  font-size: var(--placeholder-fontSize);
-  margin-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input:focus:-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.7s ease;
-  padding-left: 18px;
-  font-size: var(--placeholder-fontSize);
-  margin-left: 18px;
-  font-family: var(--font-helvetica);
-}
-.registration__input:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.7s ease;
-  padding-left: 18px;
-  font-size: var(--placeholder-fontSize);
-  margin-left: 18px;
-  font-family: var(--font-helvetica);
-}
-
-.registration__checkbox {
+  background: var(--registration-button);
+  border: transparent;
+  
   color: #fff;
-  background: var(--input-checkbox_checked);
+  font-size: 32px;
+  margin-top: 88px;
+}
+
+.registration__button_uppercase {
+  text-transform: uppercase;
 }
